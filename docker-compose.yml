@@ -1,0 +1,11 @@
+version: "3.6"
+services:
+  api:
+    image: node:10.15.3-alpine
+    container_name: tqd-node
+    build: .
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=local
+      -
