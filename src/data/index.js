@@ -16,3 +16,7 @@ const populateDatabase = async () => {
   }
   return elastic.esclient.bulk({ body: docs });
 };
+
+module.exports = {
+  populateDatabase,
+};

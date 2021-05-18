@@ -16,7 +16,7 @@ function start() {
     .use((_req, res) =>
       res.status(404).json({ success: false, error: "Route not found" })
     )
-    .listen(post, () => console.log(`Server online on port ${port}`));
+    .listen(port, () => console.log(`Server ready on port ${port}`));
 }
 
 module.exports = {
