@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2-runtime start ./src/main.js --name node_app",
-    "stop": "pm2-runtime stop node_app"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkozemzak/elastic-text-search.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkozemzak/elastic-text-search/issues"
+  },
+  "homepage": "https://github.com/tkozemzak/elastic-text-search#readme",
   "dependencies": {
-    "@elastic/elasticsearch": "^7.12.0",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^9.0.2",
+    "elasticsearch": "^16.7.2",
     "express": "^4.17.1"
   }
 }
